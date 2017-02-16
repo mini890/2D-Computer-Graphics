@@ -11,7 +11,7 @@ public class HelloWorldApp {
         p = new Ponto2D(3, 5);
 
         //Impressão para a consola
-        System.out.println(p.x);
-        System.out.println(p.y);
+        System.out.println(p.getX());
+        System.out.println(p.getY());
     }
 }
