@@ -1,4 +1,4 @@
-package Aula_1.HelloWorld;
+package Aula_2.HelloWorld;
 
 /**
  * Created by Miguel Silva on 16/02/2017.
@@ -6,8 +6,8 @@ package Aula_1.HelloWorld;
 public class Ponto2D {
 
     //Criação de Variáveis X e Y
-    protected int x; //Protected faz com que as subclasses possam aceder e modificar estas variáveis
-    protected int y;
+    int x;
+    int y;
 
     //Criação de Construtor
     Ponto2D() {
@@ -22,19 +22,19 @@ public class Ponto2D {
         y = y1;
     }
 
-    int getX() {
+    public int getX() {
         return x;
     }
 
-    void setX(int x) {
+    public void setX(int x) {
         this.x = x;
     }
 
-    int getY() {
+    public int getY() {
         return y;
     }
 
-    void setY(int y1) {
+    public void setY(int y1) {
         y = y1;
     }
 }
