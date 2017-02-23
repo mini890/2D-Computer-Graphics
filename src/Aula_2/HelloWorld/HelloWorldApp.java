@@ -8,6 +8,7 @@ public class HelloWorldApp {
     public static void main(String[] args) {
         //Declarar o objeto
         Ponto3D p = new Ponto3D();
+        //Apesar de Ponto3D não ter definido em si o X e Y, vai buscar a partir do Ponto2D
         p.setX(1);
         p.setY(2);
         p.setZ(3);
