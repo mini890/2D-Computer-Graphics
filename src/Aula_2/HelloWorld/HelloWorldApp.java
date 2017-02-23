@@ -1,5 +1,7 @@
 package Aula_2.HelloWorld;
 
+import java.util.ArrayList;
+
 /**
  * Created by Miguel Silva on 16/02/2017.
  */
@@ -39,6 +41,18 @@ public class HelloWorldApp {
         	//Format permite imprimir com um determinado formato, %d para inteiro, %f para float %1.2f para 2 casas décimais
         	//e determinar á frente o que vai ser impresso por ordem de escrita 
         	System.out.format("Ponto (%d,%d,%d)\n", pTemp.getX(), pTemp.getY(), pTemp.getZ());
+        }
+        
+        //ArrayList é um array dinámico, sem limite
+        ArrayList<Ponto3D> pa1 = new ArrayList<Ponto3D>();
+        System.out.println("ou \n");
+        //Usar add para adicionar o ponto, como definimos o array como Ponto3D temos de criar um novo Ponto3D para adicionar ao Array
+        pa1.add(new Ponto3D(1,2,3));
+        pa1.add(new Ponto3D(4,5,6));
+        pa1.add(new Ponto3D(7,8,9));
+        
+        for (Ponto3D pArrayListTemp: pa1) {
+        	System.out.format("Ponto (%d, %d, %d)\n", pArrayListTemp.getX(), pArrayListTemp.getY(), pArrayListTemp.getZ());
         }
     }
 }
