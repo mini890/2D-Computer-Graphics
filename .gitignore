@@ -13,3 +13,7 @@ hs_err_pid*
 
 Code.iml
 .idea/
+.classpath
+.project
+Code.eml
+Code.userlibraries

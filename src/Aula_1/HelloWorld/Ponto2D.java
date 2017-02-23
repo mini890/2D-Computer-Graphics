@@ -5,18 +5,18 @@ package Aula_1.HelloWorld;
  */
 public class Ponto2D {
 
-    //CriaÃ§Ã£o de VariÃ¡veis X e Y
+    //Criação de Variáveis X e Y
     int x;
     int y;
 
-    //CriaÃ§Ã£o de Construtor
+    //Criação de Construtor
     Ponto2D() {
         x = y = 0;
     }
 
-    //CriaÃ§Ã£o de 2Âº Construtor
+    //Criação de 2º Construtor
     Ponto2D(int x, int y1) {
-        //Usar this quando existe 2 mÃ©todos com o mesmo nome
+        //Usar this quando existe 2 métodos com o mesmo nome
         this.x = x;
         //Esta seria outra alternativa ao this
         y = y1;

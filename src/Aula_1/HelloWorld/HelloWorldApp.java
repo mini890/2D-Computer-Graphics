@@ -10,7 +10,7 @@ public class HelloWorldApp {
         Ponto2D p;
         p = new Ponto2D(3, 5);
 
-        //Impress√£o para a consola
+        //Impress„o para a consola
         System.out.println(p.getX());
         System.out.println(p.getY());
     }
