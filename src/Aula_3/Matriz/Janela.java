@@ -1,6 +1,8 @@
-package Aula_3.Exemplo;
+package Aula_3.Matriz;
 
 import javax.swing.JFrame;
+
+import Aula_3.Exemplo.ExercicioCurvaCubica;
 
 public class Janela extends JFrame {
 	
@@ -19,6 +21,7 @@ public class Janela extends JFrame {
 		setVisible(true);
 		//Impedir o resize da janela
 		setResizable(false);
+		setSize(1280, 720);
 	}
 	
 	public static void main(String[] args) {

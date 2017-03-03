@@ -1,4 +1,4 @@
-package Aula_3.Exemplo;
+package Aula_3.ConstrutorCurva2D;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -16,21 +16,10 @@ public class Tela extends JPanel {
 		//Definir todas as definições do paintComponent
 		super.paintComponent(g);
 		// Casting (Graphics2D) serve para alterar a variável g que era do tipo "Graphics" para "Graphics2D"
-		Graphics2D g2d = (Graphics2D) g;		
+		Graphics2D g2d = (Graphics2D) g;
 		
-		//Chamar construtor
-		CubicCurve2D.Double curvaCubica = new CubicCurve2D.Double();
-		//Definir curva
-		curvaCubica.setCurve(100D, 100D, 30D, 50D, 200D, 50D, 200D, 90D);
-		//Desenhar
-		g2d.draw(curvaCubica);
+		CurvaCubica c = new CurvaCubica(150, 70, 200, 20, 250, 18, 280, 70);
 		
-		Rectangle2D rect = new Rectangle2D.Double();
-		rect.setRect(100, 100, 250, 300);
-		g2d.draw(rect);
-		
-		RoundRectangle2D roundRect = new RoundRectangle2D.Double();
-		roundRect.setRoundRect(300, 300, 150, 150, 25, 25);
-		g2d.draw(roundRect);
+		c.desenha(g2d);
 	}
 }
