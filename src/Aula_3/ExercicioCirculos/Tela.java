@@ -21,7 +21,7 @@ public class Tela extends JPanel {
 		Circulo_Quadrados c = new Circulo_Quadrados(8, 100);
 		c.draw(g2d);
 		
-		ExercicioCirculos_Prof c2 = new ExercicioCirculos_Prof(16, 50);
+		ExercicioCirculos_Prof c2 = new ExercicioCirculos_Prof(7, 50);
 		c2.draw(g2d);
 	}
 }
