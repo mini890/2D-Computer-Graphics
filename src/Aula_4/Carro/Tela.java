@@ -56,6 +56,12 @@ public class Tela extends JPanel implements KeyListener {
 		case KeyEvent.VK_NUMPAD2:
 			carro.trocaParaRodaPneu();
 			break;
+		case KeyEvent.VK_3:
+		case KeyEvent.VK_NUMPAD3:
+			RodaSimples roda1 = new RodaSimples(8, 125, 135);
+			RodaSimples roda2 = new RodaSimples(8, 200, 135);
+			carro.trocaRoda(roda1, roda2);
+			break;
 		default:
 			break;
 		}

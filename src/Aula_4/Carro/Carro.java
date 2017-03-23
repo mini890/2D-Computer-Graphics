@@ -101,4 +101,9 @@ public class Carro {
 		roda1 = a;
 		roda2 = b;
 	}
+	
+	public void trocaRoda(Roda roda1, Roda roda2) {
+		this.roda1 = roda1;
+		this.roda2 = roda2;
+	}
 }
