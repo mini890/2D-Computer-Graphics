@@ -48,6 +48,14 @@ public class Tela extends JPanel implements KeyListener {
 		case KeyEvent.VK_RIGHT:
 			carro.goRight();
 			break;
+		case KeyEvent.VK_1:
+		case KeyEvent.VK_NUMPAD1:
+			carro.trocaParaRodaAros();
+			break;
+		case KeyEvent.VK_2:
+		case KeyEvent.VK_NUMPAD2:
+			carro.trocaParaRodaPneu();
+			break;
 		default:
 			break;
 		}

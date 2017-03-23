@@ -7,16 +7,14 @@ import java.awt.geom.GeneralPath;
 
 public class Carro {
 	int xinicial, yinicial;
-	//TODO Uncomment Code
-	//RodaPneu roda1;
-	//RodaPneu roda2;
+	Roda roda1;
+	Roda roda2;
 
 	public Carro(int xinicial, int yinicial) {
 		this.xinicial = xinicial;
 		this.yinicial = yinicial;
-		//TODO Uncomment Code
-		//RodaPneu roda1 = new RodaPneu(8, 17, 5, xinicial + 60, yinicial);
-		//RodaPneu roda2 = new RodaPneu(8, 17, 5, xinicial + 160, yinicial);
+		roda1 = new RodaPneu(8, 17, 5, xinicial + 60, yinicial);
+		roda2 = new RodaAros(8, 17, xinicial + 160, yinicial);
 	}
 
 	public void desenha(Graphics2D g2d) {
@@ -59,28 +57,48 @@ public class Carro {
 		farol.setAngleStart(90);
 		farol.setAngleExtent(-180);
 		g2d.fill(farol);// farol
-
-		//TODO Remove two lines down
-		RodaPneu roda1 = new RodaPneu(8, 17, 5, xinicial + 60, yinicial);
-		RodaPneu roda2 = new RodaPneu(8, 17, 5, xinicial + 160, yinicial);
 		
 		roda1.draw(g2d);
 		roda2.draw(g2d);
 	}
 
 	public void goUp() {
-		yinicial -= 5;
+		this.yinicial -= 5;
+		roda1.sobe(5);
+		roda2.sobe(5);
 	}
 
 	public void goDown() {
 		this.yinicial += 5;
+		roda1.desce(5);
+		roda2.desce(5);
 	}
 
 	public void goLeft() {
 		this.xinicial -= 5;
+		roda1.avanca(5);
+		roda2.avanca(5);
 	}
 
 	public void goRight() {
 		this.xinicial += 5;
+			roda1.recua(5);
+			roda2.recua(5);
+	}
+	
+	public void trocaParaRodaAros() {
+		RodaAros a = new RodaAros(8, 17, xinicial + 60, yinicial);
+		RodaAros b = new RodaAros(8, 17, xinicial + 160, yinicial);
+		
+		roda1 = a;
+		roda2 = b;
+	}
+	
+	public void trocaParaRodaPneu() {
+		RodaPneu a = new RodaPneu(8, 17, 5, xinicial + 60, yinicial); 
+		RodaPneu b = new RodaPneu(8, 17, 5, xinicial + 160, yinicial);
+		
+		roda1 = a;
+		roda2 = b;
 	}
 }
