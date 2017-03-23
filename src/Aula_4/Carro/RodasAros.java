@@ -12,6 +12,13 @@ public class RodasAros {
 		this.posx_init = posx_init;
 		this.posy_init = posy_init;
 	}
+	
+	public RodasAros(int posx_init, int posy_init) {
+		n = 8;
+		raio = 17;
+		this.posx_init = posx_init;
+		this.posy_init = posy_init;
+	}
 
 	public void draw(Graphics2D g2d) {
 		double ang;
