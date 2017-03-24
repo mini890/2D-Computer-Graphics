@@ -7,7 +7,6 @@ public class RodaSimples extends Roda {
 
 	RodaSimples(int raio, int xi, int yi) {
 		super(raio, xi, yi, 0);
-		// TODO Auto-generated constructor stub
 	}
 
 	public void draw(Graphics2D g2d) {
