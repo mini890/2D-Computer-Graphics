@@ -1,4 +1,4 @@
-package TransformacoesGeometricas;
+package Aula5.TransformacoesGeometricas;
 
 import java.awt.Color;
 import java.awt.Graphics;

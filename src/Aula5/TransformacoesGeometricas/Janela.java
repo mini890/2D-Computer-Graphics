@@ -1,4 +1,4 @@
-package TransformacoesGeometricas;
+package Aula5.TransformacoesGeometricas;
 
 import javax.swing.JFrame;
 
