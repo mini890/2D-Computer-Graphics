@@ -33,7 +33,6 @@ public class Roda {
 	}
 
 	public void draw(Graphics2D g2d) {
-		// TODO Auto-generated method stub
 	}
 
 }

@@ -70,14 +70,8 @@ public class Tela extends JPanel implements KeyListener {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
-
-	}
+	public void keyReleased(KeyEvent e) {}
 
 	@Override
-	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
-
-	}
+	public void keyTyped(KeyEvent e) {}
 }
