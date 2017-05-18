@@ -35,8 +35,7 @@ public class Player {
 
 	public void desenha(Graphics2D g2d) {
 		g2d.setTransform(transform);
-		g2d.drawImage(img, 0, 0, 128, 128, posicao * 256, 0,
-				posicao * 256 + 256, 256, null);
+		g2d.drawImage(img, 0, 0, 128, 128, posicao * 256, 0, posicao * 256 + 256, 256, null);
 	}
 
 	class Anima extends TimerTask {

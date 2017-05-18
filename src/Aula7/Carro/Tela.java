@@ -29,10 +29,10 @@ public class Tela extends JPanel implements KeyListener {
 
 		t = new Timer();
 		t.scheduleAtFixedRate(new Anima(), 0, 20);
-		
+
 		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 		g2d.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
-		
+
 		c1.desenha(g2d);
 		c2.desenha(g2d);
 	}
@@ -52,7 +52,7 @@ public class Tela extends JPanel implements KeyListener {
 		case KeyEvent.VK_DOWN:
 			c1.desce();
 			break;
-			
+
 		case KeyEvent.VK_A:
 			c2.avanca();
 			break;
@@ -67,19 +67,16 @@ public class Tela extends JPanel implements KeyListener {
 			break;
 		}
 
-		//repaint();
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override
 	public void keyTyped(KeyEvent e) {
-		// TODO Auto-generated method stub
 	}
-	
+
 	class Anima extends TimerTask {
 		@Override
 		public void run() {

@@ -2,8 +2,6 @@ package Aula5.TransformacoesGeometricas;
 
 import javax.swing.JFrame;
 
-import Aula_3.Exemplo.ExercicioCurvaCubica;
-
 public class Janela extends JFrame {
 	
 	public Janela() {
