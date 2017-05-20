@@ -17,8 +17,6 @@ import java.util.TimerTask;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-import javafx.scene.transform.Affine;
-
 public class Tela extends JPanel {
 
 	Player player;

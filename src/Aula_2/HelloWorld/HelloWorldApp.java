@@ -10,11 +10,11 @@ public class HelloWorldApp {
     public static void main(String[] args) {
         //Declarar o objeto
         Ponto3D p = new Ponto3D();
-        //Apesar de Ponto3D não ter definido em si o X e Y, vai buscar a partir do Ponto2D
+        //Apesar de Ponto3D nï¿½o ter definido em si o X e Y, vai buscar a partir do Ponto2D
         p.setX(1);
         p.setY(2);
         p.setZ(3);
-        //Impressão para a consola
+        //Impressï¿½o para a consola
         System.out.println(p.getX());
         System.out.println(p.getY());
         System.out.println(p.getZ());
@@ -29,21 +29,21 @@ public class HelloWorldApp {
         
         System.out.println("Ponto3D Usando Array\n");
 
-        //Declaração de 1 Array com 3 Posições
+        //Declaraï¿½ï¿½o de 1 Array com 3 Posiï¿½ï¿½es
         Ponto3D[] pa = new Ponto3D[3];
-        //Posição 0 é ...
+        //Posiï¿½ï¿½o 0 ï¿½ ...
         pa[0] = new Ponto3D(3,6, 9);
         pa[1] = new Ponto3D(5,7, 11);
         pa[2] = new Ponto3D(7,10, 15);
         
-        //Ciclo for que percorre o array automáticamente
+        //Ciclo for que percorre o array automï¿½ticamente
         for (Ponto3D pTemp: pa) {
-        	//Format permite imprimir com um determinado formato, %d para inteiro, %f para float %1.2f para 2 casas décimais
-        	//e determinar á frente o que vai ser impresso por ordem de escrita 
+        	//Format permite imprimir com um determinado formato, %d para inteiro, %f para float %1.2f para 2 casas dï¿½cimais
+        	//e determinar ï¿½ frente o que vai ser impresso por ordem de escrita 
         	System.out.format("Ponto (%d,%d,%d)\n", pTemp.getX(), pTemp.getY(), pTemp.getZ());
         }
         
-        //ArrayList é um array dinámico, sem limite
+        //ArrayList ï¿½ um array dinï¿½mico, sem limite
         ArrayList<Ponto3D> pa1 = new ArrayList<Ponto3D>();
         System.out.println("ou \n");
         //Usar add para adicionar o ponto, como definimos o array como Ponto3D temos de criar um novo Ponto3D para adicionar ao Array
